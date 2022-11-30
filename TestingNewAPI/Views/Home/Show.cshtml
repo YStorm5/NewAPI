@@ -1,0 +1,19 @@
+﻿@model List<News>
+@{
+    ViewData["Title"] = "News";
+}
+<div class="list-group">
+    @foreach (var item in Model)
+    {
+        <div class="list-group-item" aria-current="true">
+            <div class="d-flex w-100 justify-content-between">
+                <h3 class="mb-1"><strong>@item.title</strong></h3>
+            </div>
+            <br>
+            <span class="mb-2 text-success">@item.DateTime</span>
+            <p class="mt-2">@Html.Raw(@item.detial)</p>
+        </div>
+        
+    }
+</div>
+<span class="fst-italic text-muted">Reference: <a href="@Model.First().link">Fresh News</a></span>

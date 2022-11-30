@@ -1,0 +1,23 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model List<News>
+<h1>Lastest<span class="text-danger">News</span></h1><br />
+<div class="list-group">
+    @{
+        int i = 1;
+    }
+    @foreach (var item in Model)
+    {
+        <a asp-controller="Home" asp-action="Show" asp-route-link="@item.link" class="list-group-item list-group-item-action" aria-current="true">
+            <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">@i. @item.title</h5>
+            </div>
+        </a>
+        <hr />
+        i++;
+    }
+    
+    
+</div>
+
