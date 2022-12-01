@@ -57,12 +57,15 @@ namespace NewAPI.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> Get()
+        public async Task<IActionResult> Get(int page)
         {
             List<News> news = new List<News>();
             HtmlWeb htmlWeb = new HtmlWeb();
 
-            for (int i = 0; i < 50; i += 50)
+            int newPage = page * 50;
+            int totalPage = newPage + 50;
+
+            for (int i = newPage; i < totalPage; i += 50)
             {
                 HtmlDocument document = htmlWeb.Load($"https://freshnewsasia.com/index.php/en/?start={i}");
                 var doc = document.DocumentNode.SelectNodes("//td[@class='list-title']");
