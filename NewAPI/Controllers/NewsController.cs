@@ -57,11 +57,12 @@ namespace NewAPI.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> Get(int page)
+        public async Task<IActionResult> Get(int page = 1)
         {
             List<News> news = new List<News>();
             HtmlWeb htmlWeb = new HtmlWeb();
 
+            page -= 1;
             int newPage = page * 50;
             int totalPage = newPage + 50;
 
