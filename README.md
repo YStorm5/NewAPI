@@ -9,4 +9,5 @@ Total page : 20
 
 Example: https://youstoopid75.bsite.net/api/news/get?page=2
 
+**Dont mind the website name lmao**
 
