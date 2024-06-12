@@ -25,7 +25,7 @@ The API provides a total of 20 pages of news articles. You can navigate through 
 
 ---
 
-**Disclaimer:** This API is not affiliated with FreshNews. The data presented is sourced from FreshNews and made available via this API for educational and development purposes.
+**Disclaimer:** This API is not affiliated with [FreshNews](https://freshnewsasia.com/index.php/en/ "FreshNews's Website"). The data presented is sourced from FreshNews and made available via this API for educational and development purposes.
 
 *PS: Dont mind the api endpoint name lmao*
 
