@@ -1,7 +1,5 @@
 # News API for Khmer News - Fetch Data from FreshNews
 
-## ⚠⚠ Currently maintenance ⚠⚠
-
 This repository provides an API for accessing up-to-date news data from various Khmer news sources, with data fetched directly from FreshNews. The API allows developers to retrieve news articles and seamlessly integrate the data into their applications or services.
 
 ## API Endpoint
@@ -9,7 +7,7 @@ This repository provides an API for accessing up-to-date news data from various 
 To access the News API, use the following endpoint:
 
 ```
-https://youstoopid75.bsite.net/api/news/get
+http://news.somee.com/api/news/get
 ```
 
 ## Paginated Results
@@ -17,7 +15,7 @@ https://youstoopid75.bsite.net/api/news/get
 To retrieve additional pages of news articles, append `?page=` followed by the desired page number to the API endpoint. For example, to retrieve the second page of results, use the following URL:
 
 ```
-https://youstoopid75.bsite.net/api/news/get?page=2
+http://news.somee.com/api/news/get?page=2
 ```
 
 ## Total Pages
