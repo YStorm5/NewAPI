@@ -6,8 +6,13 @@ This repository provides an API for accessing up-to-date news data from various 
 
 To access the News API, use the following endpoint:
 
++ List all news
 ```
 http://news.somee.com/api/news/get
+```
++ Show detail
+```
+http://news.somee.com/api/news/show?link={link}
 ```
 
 ## Paginated Results
